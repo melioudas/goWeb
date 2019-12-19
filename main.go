@@ -9,8 +9,9 @@ import (
 )
 
 func main() {
-	//1.加载配置文件
-	InitConfig("conf/conf.conf")
+	//1.加载配置文件		211.100.75.226:8880
+	//linux同级	config.conf    window下conf/conf.conf
+	InitConfig("config.conf")
 	//2.init加载kafka
 	InitKafka()
 	//3.加载redis
